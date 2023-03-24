@@ -16,3 +16,4 @@ dependencies:
     - tokenizers
     - wandb
     - tqdm
+    - tiktoken

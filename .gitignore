@@ -1,0 +1,37 @@
+# Ignore Python environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.so
+*.pyo.so
+
+# Ignore virtual environment folders
+venv/
+.env/
+.virtualenv/
+
+# Ignore Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Ignore PyTorch model files
+*.pt
+
+# Ignore other common files
+.DS_Store
+*.log
+*.csv
+*.json
+*.txt
+*.swp
+*.swo
+*.bak
+*.tmp
+*.tgz
+*.zip
+
+# Ignore common IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

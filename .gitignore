@@ -22,7 +22,6 @@ venv/
 *.log
 *.csv
 *.json
-*.txt
 *.swp
 *.swo
 *.bak

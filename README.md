@@ -1,6 +1,9 @@
-#
+# Deploy GPT-2 Pretrained Model to SageMaker with Inference Endpoint
+Welcome to the repository that demonstrates how to deploy a GPT-2 pretrained model to AWS SageMaker and create an inference endpoint. By following the instructions in this README, you will be able to quickly and easily set up the environment, deploy the model, and interact with it. Currently, the use case is creating a simple text-generation tool given user-specified prompt. 
 
-# Usage
+We will be using the `PyTorch` framework and SageMaker is tightly integrated with `PyTorch`. The model specification (e.g. embedding dimension, number of layers and attention heads) and pretrained weights are provided by the `transformers` package from [Hugging Face](https://huggingface.co/docs/transformers/model_doc/gpt2).
+
+# How to load and interact with GPT-2 locally
 
 Create the environment:
 ```

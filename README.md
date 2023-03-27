@@ -3,6 +3,10 @@ Welcome to the repository that demonstrates how to deploy a GPT-2 pretrained mod
 
 We will be using the `PyTorch` framework and SageMaker is tightly integrated with `PyTorch`. The model specification (e.g. embedding dimension, number of layers and attention heads) and pretrained weights are provided by the `transformers` package from [Hugging Face](https://huggingface.co/docs/transformers/model_doc/gpt2).
 
+The scripts for loading the model is adapted from this awesome tutorial repo on fine-tuning GPT-2 called [NanoGPT](https://github.com/karpathy/nanoGPT).
+
+If you are interested in something simpler, you can checkout this tutorial on deploying a pytorch model trained on the MNIST dataset [here](https://github.com/aws/amazon-sagemaker-examples/blob/f9ab25aab7a6bdfcba3c84cf8e9d30932a94e227/frameworks/pytorch/get_started_mnist_train.ipynb).
+
 # How to load and interact with GPT-2 locally
 
 Create the environment:

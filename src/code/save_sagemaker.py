@@ -5,6 +5,7 @@ import os
 import sys
 
 #import sagemaker_containers
+import math
 import torch
 import torch.distributed as dist
 import torch.nn as nn
@@ -18,6 +19,8 @@ from dataclasses import dataclass
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler(sys.stdout))
+
+# os.execute("pip install transformers tiktoken")
 
 #@torch.jit.script
 def new_gelu(x):

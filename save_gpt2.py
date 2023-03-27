@@ -17,7 +17,7 @@ compile = False # use PyTorch 2.0 to compile the model to be faster
 model_args = dict(n_layer=None, n_head=None, n_embd=None, block_size=None,
                   bias=None, vocab_size=None, dropout=dropout) # start with model_args from command line
 
-print(f"Initializing from OpenAI GPT-2 weights: {init_from}")
+#print(f"Initializing from OpenAI GPT-2 weights: {init_from}")
 # initialize from OpenAI GPT-2 weights
 override_args = dict(dropout=dropout)
 model = GPT.from_pretrained(init_from, override_args)
@@ -27,5 +27,5 @@ for k in ['n_layer', 'n_head', 'n_embd', 'block_size', 'bias', 'vocab_size']:
 
 checkpoint = {'model_args': model_args,
               'model': model.state_dict()}
-print(f"saving checkpoint to {out_dir}")
+#print(f"saving checkpoint to {out_dir}")
 torch.save(checkpoint, os.path.join(out_dir, 'gpt2.pt'))
